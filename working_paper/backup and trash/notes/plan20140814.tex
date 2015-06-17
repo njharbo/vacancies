@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage{amsmath, mathtools}
+
+\title{Proposed Empirical Strategy and Definitions \\ Work for Week 34}
+\author{Niels-Jakob Harbo}
+
+\begin{document}
+
+\maketitle
+
+\section{Proposed definitions}
+
+\subsection*{Number of hires via announced openings}
+
+\begin{itemize}
+\item Ideally:
+\begin{align}
+H_A(i,t)=
+\begin{dcases}
+H(i,t) &\text{if } H(i,t)<O_A (I_t=0, I_{t-1}=1) \\
+O_A (I_t=1, I_{t-1}=0) &\text{if } H(i,I_t)>O_A (I_t=1, I_{t-1}=0)
+\end{dcases}
+\end{align}
+
+
+\item Maybe more doable:
+\begin{align}
+H_A(i,t)=
+\begin{dcases}
+H(i,t)   &\text{if } H(i,t)<O_a(i,t) \\
+O_a(i,t) &\text{if } H(i,t)>O_a(i,t) 
+\end{dcases}
+\end{align}
+
+\end{itemize}
+
+\subsection*{Number of hires via unannounced openings}
+
+\begin{align}
+H_U(i,t)=H(i,t)-H_A(i,t)
+\end{align}
+
+\subsection*{Stock of announced job openings}
+
+\begin{align}
+O_a(i,t):= \text{Observed}
+\end{align}
+
+\subsection*{Stock of unannounced job openings}
+\begin{align}
+O(i,t)=H_A(i,t)
+\end{align}
+
+\section{Descriptives: Pure}
+
+\begin{itemize}
+\item 
+\end{itemize}
+
+
+\section{Descriptives: Tabulation}
+
+\begin{itemize}
+
+\item Hires tabulated on
+\begin{enumerate}
+\item Time
+\item All given background variables.
+\end{enumerate}
+
+\item Announced positions tabulated on
+\begin{enumerate}
+\item Time
+\item All given background variables.
+\end{enumerate}
+
+
+\item Stocks of announced and unannounced job openings should be tabulated on \emph{firm} information. Firm information comes from IDFI, which cannot be matched. So we have to somehow transform workplace information (in IDAS) to firm information. 
+
+\begin{itemize}
+\item Sector based on workplace (BRANCHE03)
+\item Firm size (has to be constructed)
+\item Growth of firm size.
+\item Average hourlt wage in firm.
+\end{itemize}
+
+
+\item Hires should be tabulated on person and job information. However, due to the nature of the data not all hires can be traced out on announced and unannounced openings. Thus, when tabulating on person and job information we will restrict us to the sample of hires where all hires are either done via announced or unannounced openings.
+
+	\begin{itemize}
+		\item Age
+		\item Sex
+		\item Wage decile
+		\item Sector
+		\item Position
+	\end{itemize} 
+
+\end{itemize}
+
+\section{Descriptives: Figures}
+
+\begin{itemize}
+\item Histograms:
+\begin{enumerate}
+\item $H_A(i,t)$ on monthly basis. Aggregate for all years and for each year seperately.
+\item $H_U(i,t)$ on monthly basis. Aggregate for all years and for each year seperately.
+\end{enumerate}
+\item Figures
+\begin{enumerate}
+\item $(t, \sum_i H_A(i,t)) $
+\item $(t, \sum_i H_U(i,t)) $
+\item $(t, \sum_i O_A(i,t)) $
+\item $(t, \sum_i O_U(i,t)) $
+\item (t, share of hires via announced openings).
+\item (t, share of hires via unannounced openings).
+\item Actual Beveridge curve $(u, O_a+O_u)$.
+\item Perceived Beveridge curve $(u, O_a)$.
+\end{enumerate}
+\end{itemize}
+
+\section{Analysis}
+
+\begin{itemize}
+\item Estimate matching functions for annonuced and unannounced openings.
+\item Use calibrated model to rationalise shifts in share of announced openings. 
+\end{itemize}
+
+
+\end{document}

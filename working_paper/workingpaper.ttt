@@ -1,0 +1,91 @@
+\begin{table}[h!]
+\caption{Statistics by firm characteristics - monthly averages 2004-2012}
+\label{tab:maindesc}
+\begin{tabularx}{\linewidth}{cXcccccr}
+\toprule[1pt]
+&&HT&OA&HA&HU&HA/HT&Size\\
+\midrule
+\input{tables/maintable}
+\bottomrule[1pt]
+\end{tabularx}
+\begin{minipage}{\linewidth}
+\footnotesize{Notes: HT: Total number of hires. OA: Number of announced vacancies. HA: Number of hires related to an announced vacancy. HU: number of hires without a post vacancy. HA/HT: Hires through vacancies in relation to the total number of hires. Size: firm size (by the number of employees.). Sector is only known for 2008-2012.}
+\end{minipage}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[h!]
+\begin{center}
+\caption{The ratio of announced hires to total hires, by firm size 2004-2012}
+\label{tab:size}
+\begin{tabularx}{.65\linewidth}{X|cccccc}
+\toprule
+&\multicolumn{6}{c}{\# Employees (full year equ.)}\\
+&<3&3-4&5-9&10-19&20-49&>50\\\midrule
+\input{tables/table_size}
+\bottomrule
+\end{tabularx}
+\end{center}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[h!]
+\begin{center}
+\caption{The ratio of announced hires to total hires, by firm growth 2004-2012}
+\label{tab:growth}
+\begin{tabularx}{.85\linewidth}{X|cccccc}
+\toprule
+&\multicolumn{6}{c}{Growth in \# Employees (full year equ.)}\\
+&<-10\%&10-0\%&No change&0-10\%&10-25\%&>25\%\\\midrule
+\input{tables/table_growth}
+\bottomrule
+\end{tabularx}
+\end{center}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[htbp]
+\caption{Calibration}
+\label{tab:calibration_full}
+\begin{tabularx}{\textwidth}{cXcXl}
+ \hline
+  Parameter & & Value & & Source / Calibration  \\
+  \hline
+   $y$ & & $10$   & & Normalisation    \\
+   $r$ & & $.05$ & &             \\
+   $q$ & & $.15$ & &            \\
+   $z$ & & $4.8$   & & Replacement rate=0.5       \\
+   $\beta$ & & $.8$ & & Hosios condition                 \\
+ $\alpha$ & & $.8$ & & Estimated matching function \\
+ $A_a=A_u$ & & $1$    & &  Normalisation              \\
+ %$A_u$ & & $1$    & &  Normalisation             \\
+ $C_u$ & & $.87$   & & Monthly job-finding rate=0.2               \\
+ $C_a/C_u$ & & $[1.73, 1.41]$   & & Share of unannounced hires $\in (0.90, 0.80)$               \\
+  \hline
+\end{tabularx}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[htbp]
+\caption{Estimated matching function, $\log(h)=A+\alpha u+(1-\alpha) o$}
+\label{tab:perceived_A}
+\begin{tabularx}{\textwidth}{cXcXcXc}
+ \hline
+  $ $ & & A & & $\alpha$ & & $1-\alpha$   \\
+  \hline
+  & &  \multicolumn{5}{c}{$h=$ total hires, $o=$ announced openings} \\
+  \hline
+   $C_a/C_u=1.41$ & & $2.07$ & &  $.8$ & & $.2$    \\
+   $C_a/C_u=1.71$  & & $2.89$ & &  $.8$ & & $.2$          \\
+ \hline
+   & &  \multicolumn{5}{c}{$h=$ announced hires, $o=$ announced openings} \\
+   $C_a/C_u=1.41$ & & $0$ & &  $.8$ & & $.2$    \\
+   $C_a/C_u=1.71$  & & $0$ & &  $.8$ & & $.2$          \\
+  \hline
+ & &  \multicolumn{5}{c}{$h=$ unannounced hires, $o=$ unannounced openings} \\
+   $C_a/C_u=1.41$ & & $0$ & &  $.8$ & & $.2$    \\
+   $C_a/C_u=1.71$  & & $0$ & &  $.8$ & & $.2$          \\
+\end{tabularx}
+\end{table}
+\efloatseparator
+ 

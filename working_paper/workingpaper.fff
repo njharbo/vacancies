@@ -1,0 +1,69 @@
+\begin{figure}[h!]
+\subfloat[Time to job start (all announcements)\label{fig:jobneta}]{\includegraphics[width=.49\linewidth]{figures/time_to_start_all}}
+\subfloat[Time to job start (without asap)\label{fig:jobnetb}]{\includegraphics[width=.49\linewidth]{figures/time_to_start_all_without_asap}}
+\caption{Time to job start from deadline, measured in months. The data is collected from Jobindex.dk's online archive 2008-2014. In Figure \ref{fig:jobneta} the job start date of "as soon as possible" openings is sat equal the application deadline. In Figure \ref{fig:jobnetb} these job openings are removed.}
+\label{fig:jobnet}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=.98\linewidth]{figures/overview_full}
+\caption{Hires through announced and unannounced positions. The dashed lines indicate the unadjusted monthly levels, the solid lines are six month moving average (with equal weights). }
+\label{fig:hires}
+\end{center}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=.98\linewidth]{figures/overview_rate_HAHT}
+\caption{The share of announced hires out of total hires. The dashed lines indicate the unadjusted monthly levels, the solid lines are six month moving average (with equal weights). }
+\label{fig:hires_shares}
+\end{center}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[h!]
+\subfloat[All years \label{fig:WD1}]{\includegraphics[width=.49\linewidth]{figures/plot_cross_sec_wagedecile}}
+\subfloat[Pre-Post 2008 \label{fig:WD2}]{\includegraphics[width=.49\linewidth]{figures/plot_cross_sec_wagedecile_bef2008}}
+\caption{The ratio of announced hires to total hires by wage decile. The wage is the average wage in the firm. }
+\label{fig:WD}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/flow_illustration.pdf}
+\caption{Illustration of flows in the model}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/BC_noeq}
+\caption{The threedimentional Beveridge Curve.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[h!]
+\subfloat[Shares of announced positions and hires as function of the cost of posting announced job openings. \label{fig:shares}]{\includegraphics[width=.49\linewidth]{../Model/programs/WP_version/shares.png}}
+\subfloat[Perceived Beveridge Curve for two values of announcing job openings \label{fig:perceived_BC}]{\includegraphics[width=.49\linewidth]{../Model/programs/WP_version/BC.png}}
+\caption{Numerical illustrations}
+\label{fig:numeric}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[h!]
+\subfloat[Job openings \label{fig:openings_abs}]{\includegraphics[width=.49\linewidth]{../Model/figures/openings}}
+\subfloat[Shares \label{fig:openings_shares}]{\includegraphics[width=.49\linewidth]{../Model/figures/openings_shares}}
+\caption{Announced and unannounced openings}
+%\label{fig:numeric}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[p!]
+\includegraphics[width=\textwidth]{../Model/programs/WP_version/BC_high_low_cA.png}
+\caption{Perceived Beveridge Curve for $C_a/C_u \in \left\{ 1.41, 1.73 \right\}$.}
+\label{fig:perceived_BC_high_low_cA}
+\end{figure}
+\efloatseparator
+ 

@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{amsmath, mathtools}
+
+\title{Proposed Empirical Strategy and Definitions}
+\author{Niels-Jakob Harbo}
+
+\begin{document}
+
+\maketitle
+
+\section{Proposed definitions}
+
+\subsection{Number of hires via announced openings}
+
+\begin{itemize}
+\item Ideally:
+\begin{align}
+H_A(i,t)=
+\begin{dcases}
+H(i,t) &\text{if } H(i,t)<O_A (I_t=0, I_{t-1}=1) \\
+O_A (I_t=1, I_{t-1}=0) &\text{if } H(i,I_t)>O_A (I_t=1, I_{t-1}=0)
+\end{dcases}
+\end{align}
+
+
+\item Maybe more doable:
+\begin{align}
+H_A(i,t)=
+\begin{dcases}
+H(i,t)   &\text{if } H(i,t)<O_a(i,t) \\
+O_a(i,t) &\text{if } H(i,t)>O_a(i,t) 
+\end{dcases}
+\end{align}
+
+\end{itemize}
+
+\subsection{Number of hires via unannounced openings}
+
+\begin{align}
+H_U(i,t)=H(i,t)-H_A(i,t)
+\end{align}
+
+\subsection{Stock of announced job openings}
+
+\begin{align}
+O_a(i,t):= \text{Observed}
+\end{align}
+
+\subsection{Stock of unannounced job openings}
+\begin{align}
+O(i,t)=H_A(i,t)
+\end{align}
+
+
+
+
+\begin{itemize}
+	\item \# Hires via unannounced vacancies
+	
+	\begin{align}
+	\text{\# Hires via unannounced vacancies} =  \text{\# hires(t)} - \text{\# vacancies(t-1)}
+	\end{align}
+	
+	\item \# Hires via announced vacancies
+	
+	\begin{align}
+	\text{\# Hires via announced vacancies} = 
+	\begin{dcases}
+	\text{\# vacancies(t-1)}  \text{ if \# hires(t)} \geq \text{\# vacancies(t-1)} \\
+	\text{\# hires(t)} \text{ if \# hires(t)} < \text{\# vacancies(t-1)}
+	\end{dcases}
+	\end{align}
+	
+	\item Stock of unannounced vacancies
+	
+	\begin{align}
+	\text{Stock unannounced vacancies (t-1)} = \text{\# Hires via unannounced vacancies(t)}
+	\end{align}
+\end{itemize}
+
+\section{Planned descriptives}
+
+\begin{itemize}
+	\item Tabulate share of \emph{unannounced vacancies} and \emph{hires via unannounced vacancies} on \emph{firm characteristics}\footnote{TBD: What can we do here?}
+	\item Tabulate share of \emph{hires via unannounced vacancies} on \emph{job and worker characteristics}
+	\begin{itemize}
+		\item Age
+		\item Sex
+		\item Wage decile
+		\item Sector
+		\item Position
+		\item Hiring channel
+	\end{itemize}
+	\item A problem is that for some firm we cannot pinpoint 
+\end{itemize}
+
+\end{document}
